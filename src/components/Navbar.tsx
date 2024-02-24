@@ -3,7 +3,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useContext, useEffect, useState } from 'react';
-import logo from "../../public/logo-new.png"
+// import logo from "../../public/logo-new.png"
+import logo from "/public/logo-new.png"
 import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
@@ -53,7 +54,6 @@ const Navbar = () => {
             src={logo}
             alt='logo'
             width={72}
-            height={40}
           />
           <p className='w-80'>O‘zbekiston Respublikasi Ekologiya, atrof-muhitni muhofaza qilish va iqlim o‘zgarishi vazirligi</p>
         </div>
