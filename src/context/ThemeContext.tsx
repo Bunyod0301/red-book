@@ -33,50 +33,50 @@
 //   )
 
 // }
-"use client"
-import { createContext, useState, useEffect, ReactNode, useContext } from "react";
+// "use client"
+// import { createContext, useState, useEffect, ReactNode, useContext } from "react";
 
-type ThemeContextType = {
-  theme: string;
-  changeTheme: (theme: string) => void;
-};
+// type ThemeContextType = {
+//   theme: string;
+//   changeTheme: (theme: string) => void;
+// };
 
-export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+// export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export const useTheme = () => {
-  const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error("useTheme must be used within a ThemeProvider");
-  }
-  return context;
-};
+// export const useTheme = () => {
+//   const context = useContext(ThemeContext);
+//   if (!context) {
+//     throw new Error("useTheme must be used within a ThemeProvider");
+//   }
+//   return context;
+// };
 
-type ThemeProviderProps = {
-  children: ReactNode;
-};
+// type ThemeProviderProps = {
+//   children: ReactNode;
+// };
 
-export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [theme, setTheme] = useState("light");
-  const [isMounted, setIsMounted] = useState(false);
+// export const ThemeProvider = ({ children }: ThemeProviderProps) => {
+//   const [theme, setTheme] = useState("light");
+//   const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setIsMounted(true);
-    const storedTheme = localStorage.getItem("theme") || "light";
-    setTheme(storedTheme);
-  }, []);
+//   useEffect(() => {
+//     setIsMounted(true);
+//     const storedTheme = localStorage.getItem("theme") || "light";
+//     setTheme(storedTheme);
+//   }, []);
 
-  if (!isMounted) {
-    return <>Loading...</>;
-  }
+//   if (!isMounted) {
+//     return <>Loading...</>;
+//   }
 
-  const changeTheme = (newTheme: string) => {
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
+//   const changeTheme = (newTheme: string) => {
+//     setTheme(newTheme);
+//     localStorage.setItem("theme", newTheme);
+//   };
 
-  return (
-    <ThemeContext.Provider value={{ theme, changeTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
-};
+//   return (
+//     <ThemeContext.Provider value={{ theme, changeTheme }}>
+//       {children}
+//     </ThemeContext.Provider>
+//   );
+// };

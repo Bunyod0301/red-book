@@ -1,10 +1,10 @@
-"use client"
+// "use client"
 
-import { useContext } from "react"
-import { ThemeContext } from "./ThemeContext"
+// import { useContext } from "react"
+// import { ThemeContext } from "./ThemeContext"
 
-export default function ClientThemeWrapper({children}:any) {
-  const { theme }:any = useContext(ThemeContext)
+// export default function ClientThemeWrapper({children}:any) {
+//   const { theme }:any = useContext(ThemeContext)
 
-  return <div data-theme={theme}>{children}</div>
-}
+//   return <div data-theme={theme}>{children}</div>
+// }

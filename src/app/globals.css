@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
+/* .btn {
   @apply rounded-full;
 }
 .navbar {
@@ -10,4 +10,4 @@
 }
 [data-theme="dark"] .navbar {
   background-color: blue;
-}
+} */
