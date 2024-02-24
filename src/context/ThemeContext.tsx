@@ -11,11 +11,12 @@ export const ThemeProvider = ({children}: any) =>{
     setIsMounted(true);
     const storedTheme = localStorage.getItem("theme") || "light";
     setTheme(storedTheme);
+    // console.log(isMounted);
   }, [])
 
-  if(!isMounted) {
-    return <>Loading...</>
-  }
+  // if(!isMounted) {
+  //   return <>Loading...</>
+  // }
 
   const changeTheme = (theme: string) =>{
     setTheme(theme);

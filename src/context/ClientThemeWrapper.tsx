@@ -6,5 +6,5 @@ import { ThemeContext } from "./ThemeContext"
 export default function ClientThemeWrapper({children}:any) {
   const { theme }:any = useContext(ThemeContext)
 
-  return <div data-theme={theme}>{children}</div>
+  return <html lang="en" data-theme={theme}>{children}</html>
 }

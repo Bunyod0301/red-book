@@ -5,3 +5,9 @@
 .btn {
   @apply rounded-full;
 }
+.navbar {
+  background-color: #9bcd9b;
+}
+[data-theme="dark"] .navbar {
+  background-color: blue;
+}
