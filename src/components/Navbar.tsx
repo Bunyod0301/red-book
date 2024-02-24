@@ -55,7 +55,7 @@ const Navbar = () => {
             width={72}
             height={40}
           />
-          <a className='w-80'>O‘zbekiston Respublikasi Ekologiya, atrof-muhitni muhofaza qilish va iqlim o‘zgarishi vazirligi</a>
+          <p className='w-80'>O‘zbekiston Respublikasi Ekologiya, atrof-muhitni muhofaza qilish va iqlim o‘zgarishi vazirligi</p>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
