@@ -5,7 +5,9 @@
 .btn {
   @apply rounded-full;
 }
-
+.navbar {
+  background-color: #262837;
+}
 [data-theme = "light"] .navbar {
   background-color: #9bcd9b;
 }
@@ -16,4 +18,15 @@
 .menu-active :nth-child(1) {
   font-weight: bold;
   color: #fff;
+}
+@media (max-width: 450px) {
+  .logo {
+    padding: 0 10px;
+  }
+  .logo-text {
+    display: none;
+  }
+  .logo-img {
+    width: 35px;
+  }
 }

@@ -33,12 +33,14 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className='flex gap-5 p-5 cursor-pointer' onClick={()=> router.push('/')}>
+        <div className='flex gap-5 p-5 cursor-pointer logo' onClick={()=> router.push('/')}>
           <Image
+            className='logo-img'
             src={logo}
             alt='logo'
-            width={70}          />
-          <p className='w-80'>O‘zbekiston Respublikasi Ekologiya, atrof-muhitni muhofaza qilish va iqlim o‘zgarishi vazirligi</p>
+            width={70}
+          />
+          <p className='logo-text classname w-80'>O‘zbekiston Respublikasi Ekologiya, atrof-muhitni muhofaza qilish va iqlim o‘zgarishi vazirligi</p>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
