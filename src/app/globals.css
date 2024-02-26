@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .btn {
+.btn {
   @apply rounded-full;
 }
-.navbar {
+
+[data-theme = "light"] .navbar {
   background-color: #9bcd9b;
 }
-[data-theme="dark"] .navbar {
-  background-color: blue;
-} */
+.menu-active {
+  background-color: #505050;
+  border-radius: 10px;
+}
+.menu-active :nth-child(1) {
+  font-weight: bold;
+  color: #fff;
+}

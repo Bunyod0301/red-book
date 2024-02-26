@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-// import { ThemeProvider } from "@/context/ThemeContext";
-// import ClientThemeWrapper from "@/context/ClientThemeWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,14 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html data-theme="dark" lang="en">
       <body className={inter.className}>
-        {/* <ThemeProvider>
-          <ClientThemeWrapper> */}
-            <Navbar />
-            {children}
-          {/* </ClientThemeWrapper>
-        </ThemeProvider> */}
+        <Navbar />
+        {children}
       </body>
     </html>
   );
